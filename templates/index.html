@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hand Gesture Control</title>
+    <title>Hand Gesture Video Control</title>
 </head>
 <body>
-    <h2>Hand Gesture Control (Render)</h2>
-    <video id="video" autoplay playsinline></video>
+    <h2>🎥 Hand Gesture Controlled Video Player</h2>
+
+    <!-- Webcam preview -->
+    <video id="video" autoplay playsinline style="width: 320px; border: 2px solid #444;"></video>
+
+    <!-- Gesture text -->
     <p id="gesture">Gesture: None</p>
+
+    <!-- Video player -->
+    <video id="player" width="640" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support video playback.
+    </video>
 
     <script src="/static/script.js"></script>
 </body>
